@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class EventsListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,3 +18,12 @@ class ViewController: UIViewController {
 
 }
 
+extension EventsListViewController: StoryboardInstantiable {
+    static var viewControllerID: String {
+        return "EventsListViewController"
+    }
+    
+    static var storyboardIdentifier: String {
+        return "EventsList"
+    }
+}
